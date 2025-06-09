@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apply - LaTech Uni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="apply.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+  <nav>
+      <div class="nav-container">
+        <label class="logo">Free4all</label>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Courses</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+
+
+  <!-- Apply Form Section -->
+  <div class="container">
+      <form action="apply.php" method="POST">
+        <h3>Apply for Admission</h3>
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <select name="reg_type" required>
+          <option value="" disabled selected>Select Registration Type</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Online">Online</option>
+        </select>
+
+        <select name="course" required>
+          <option value="" disabled selected>Select a Course</option>
+          <option value="BCA">Accelerated Degree Program(ADP)</option>
+          <option value="MCA">Web Development</option>
+          <option value="B.Tech">Graphic Design</option>
+          <option value="MBA">Data Science</option>
+          <option value="BBA">Artificial Intelligence</option>
+          <option value="BCA">Business Article</option>
+          <option value="MCA">Mobile App Development</option>
+          <option value="B.Tech">Cloud Computing</option>
+        </select>
+
+        <label style="margin-top: 10px;">Gender:</label>
+        <div style="display: flex; gap: 20px; margin-bottom: 10px;">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female" required> Female</label>
+          <label><input type="radio" name="gender" value="Other" required> Other</label>
+        </div>
+
+        <textarea name="address" rows="2" placeholder="Address" required></textarea>
+        <textarea name="message" rows="4" placeholder="Why do you want to join?" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+  </div>
+
+</body>
+</html>
