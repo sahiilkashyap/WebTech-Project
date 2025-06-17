@@ -1,0 +1,78 @@
+@import url('index.css');
+
+/* Hero */
+.contact-hero {
+  background-color: #111;
+  text-align: center;
+  padding: 60px 10%;
+  color: #fff;
+}
+
+.contact-hero h1 {
+  font-size: 36px;
+  color: #ff3c3c;
+  margin-bottom: 15px;
+}
+
+.contact-hero p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.contact-section {
+  padding: 60px 10%;
+  background-color: #111;
+}
+
+.contact-section h2 {
+  color: #ff3c3c;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #ff3c3c;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e12c2c;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socials a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff3c3c;
+}
